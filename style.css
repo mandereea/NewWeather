@@ -1,0 +1,139 @@
+*{
+    margin:0; 
+    padding:0;
+    font-family: Tahoma, Helvetica, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width:90%;
+    margin:0 auto;
+    color:rgb(109, 102, 97);
+    
+}
+header{
+    background-color: rgb(211, 211, 211);
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location-weather{
+    min-width:45%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em;
+}
+.location-weather div{
+    min-width:20%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left:1.5em;    
+}
+.location-weather img{
+    width:6em;
+}
+.location-weather span{
+    font-weight: lighter;
+    font-size: 0.9em;
+}
+
+.dailyBanner{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: space-between;
+}
+.daily-short{
+    display:flex;
+    flex-direction: column;
+    padding: 1em 1.2em;
+    align-items: center;
+    justify-content: space-between;
+}
+.daily-temp span{
+    font-size: small;
+   margin-left:0.3em;
+}
+.daily-short img {
+    width:4em;
+}
+
+.arrow {
+    margin-top:1em;
+    border: solid #EC6E4C;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.down{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.up{
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    margin-left:2em;
+}
+.yesArr {
+   margin-left:2em;
+}
+
+.day-container{
+    width:80%;
+    margin: 0 auto;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.day-container p {
+    margin-top: 1em;
+}
+.left,
+.right,
+.day-icon{
+    display:flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.no-details{
+    margin-top:2em;
+}
+.rise{
+    color: #EC6E4C;
+}
+.set{
+    color:rgb(120, 70, 139);
+}
+.warmer{
+    color: #EC6E4C;
+}
+.colder{
+    color:rgb(5, 121, 199);
+}
+
+.hour-div{
+    margin-top:1em;
+    background-color: rgb(211,211,211);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1em;
+}
+.hour-div img{
+    width: 5em;
+}
+.sky{
+    font-size: 1.2em;
+    align-content: center;
+}
