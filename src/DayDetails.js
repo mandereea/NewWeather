@@ -23,6 +23,7 @@ class DayDetails{
         const compareNight = Calculator.compareTemp(celsiusNight,celsiusNightFeel);
 
         const rain = this.day.rain ? this.day.rain : "No";
+        
         const uvi = this.day.uvi;
         const wind = this.day.wind_speed;
 

@@ -12,6 +12,7 @@ class Current{
     
         this.celsiusReal = Calculator.toCelsius(this.todayData.temp);
         this.celsiusFeel = Calculator.toCelsius(this.todayData.feels_like);
+        this.fahr = Calculator.toFahrenheit(this.todayData.temp);
         
         this.description = Calculator.capitalize(this.todayData.weather[0].description);
       
@@ -25,8 +26,8 @@ class Current{
                                             <img src="${this.iconSrc}"/>
                                             <h3 style="margin-top:-1em;">${this.description}</h3></div>
                                          
-                                        <div><h2 class="real">${this.celsiusReal} &deg;C</h2>
-                                            <p class="feel">Real feel: ${this.celsiusFeel} &deg;C</p>
+                                        <div><h2 class="real">${this.celsiusReal} &deg;C / <span style="font-size:0.6em;">${this.fahr} F</span></h2>
+                                            <p style="margin-top:1em;">Real feel: ${this.celsiusFeel} &deg;C</p>
                                         </div>`
                                         
                                          
